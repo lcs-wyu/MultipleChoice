@@ -40,6 +40,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="Check Student Answers"/>
+                                <connections>
+                                    <action selector="checkAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bdm-rG-GFe"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ex. DBEAC" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yi1-a9-2AX">
                                 <rect key="frame" x="20" y="221" width="374" height="36"/>
@@ -72,6 +75,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="correctAnswers" destination="PJE-YQ-kMM" id="C4H-eG-XvS"/>
+                        <outlet property="outputCheck" destination="QP3-Km-Bfb" id="FgS-fM-V7J"/>
+                        <outlet property="questionNumber" destination="XAv-cF-rTx" id="bio-4V-44D"/>
+                        <outlet property="studentAnswer" destination="Yi1-a9-2AX" id="JPw-xJ-6fe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
